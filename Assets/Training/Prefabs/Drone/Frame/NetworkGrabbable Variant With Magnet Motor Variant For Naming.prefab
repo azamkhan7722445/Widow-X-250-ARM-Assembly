@@ -52,10 +52,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NetworkGrabbable Variant With Magnet Motor Variant For Naming
       objectReference: {fileID: 0}
-    - target: {fileID: 4085739008571046479, guid: 530c7dc72c170894fbd3b966f4e0661e, type: 3}
-      propertyPath: SortKey
-      value: 11380912
-      objectReference: {fileID: 0}
     - target: {fileID: 6418029309944052564, guid: 530c7dc72c170894fbd3b966f4e0661e, type: 3}
       propertyPath: SortKey
       value: 2947485339
