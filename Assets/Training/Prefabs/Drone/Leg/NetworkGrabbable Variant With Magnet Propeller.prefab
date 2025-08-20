@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8820273190874587568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6855456417975233932}
+  m_Layer: 0
+  m_Name: Transform_Magnet_To_Bolt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6855456417975233932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8820273190874587568}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0000000058207665, y: 0.26512185, z: 0.000000022351744, w: -0.9642149}
+  m_LocalPosition: {x: -0.34152958, y: 0.23791984, z: -0.28083378}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 531839136388952643}
+  m_Father: {fileID: 6065561160063500381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1408143330270703493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6855456417975233932}
+    m_Modifications:
+    - target: {fileID: 116512755505830928, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_Name
+      value: MagnetForDrone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201439432525564309, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: attractedMagnetRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857965765106647319, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: 'attachmentPointTags.Array.data[0]'
+      value: Propeller_Magnet_For_Bolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857965765106647319, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: 'compatibleAttachmentPointTags.Array.data[0]'
+      value: Bolt_Magnet_For_Propeller
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565349877835629306, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+      propertyPath: magnetRadius
+      value: 0.01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+--- !u!4 &531839136388952643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1507511829222645190, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+  m_PrefabInstance: {fileID: 1408143330270703493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7301608990051069311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8565349877835629306, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+  m_PrefabInstance: {fileID: 1408143330270703493}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f18942af845acf4c82e4d7ae420dbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9117432850671611538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7857965765106647319, guid: 0c45df98266a50341a19e827f559e611, type: 3}
+  m_PrefabInstance: {fileID: 1408143330270703493}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f8cb8d9786e7646a72e7617134284b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &3070269404621606990
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 50742158627586933}
+    m_Modifications:
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 972746499928455028, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_Name
+      value: Propeller
+      objectReference: {fileID: 0}
+    - target: {fileID: 972746499928455028, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340087454529846317, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+--- !u!4 &3220067843042557312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447038772606741966, guid: c7e96ad09cc7bd44487d11248d29edcc, type: 3}
+  m_PrefabInstance: {fileID: 3070269404621606990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3580437535074587175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 557355665966128123, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_Name
+      value: NetworkGrabbable Variant With Magnet Propeller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3415296
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21490997
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28083366
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9642149
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000000044237827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247595943479195159, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.26512182
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498139544293286406, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: attractedMagnetRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367936233388125968, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691163110417154887, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_Name
+      value: Magnet to Motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322139732616761978, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322139732616761978, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322139732616761978, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: SortKey
+      value: 1648440779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: NetworkedBehaviours.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8312965834294433101}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[3]'
+      value: 
+      objectReference: {fileID: 45736923851277259}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4637425170045221027}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[5]'
+      value: 
+      objectReference: {fileID: 6595618346715642702}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[6]'
+      value: 
+      objectReference: {fileID: 9117432850671611538}
+    - target: {fileID: 7539359275661535603, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'NetworkedBehaviours.Array.data[7]'
+      value: 
+      objectReference: {fileID: 7301608990051069311}
+    - target: {fileID: 7653888488249518441, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: magnetRadius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674019755980692168, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: attractedMagnetRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8154539698622669585, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: magnetRadius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208713470491273860, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'attachmentPointTags.Array.data[0]'
+      value: Propeller_Magnet_For_Motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208713470491273860, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'compatibleAttachmentPointTags.Array.data[0]'
+      value: Motor_Magnet_For_Propeller
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3415296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21490979
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28083363
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9642149
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000019092115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644692154774086884, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.2651218
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140963364440354621, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: m_Name
+      value: Transform_Magnet_To_Motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161213164592697364, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: attachmentPointTags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161213164592697364, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'attachmentPointTags.Array.data[0]'
+      value: Propeller_Magnet_For_Motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161213164592697364, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: compatibleAttachmentPointTags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161213164592697364, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      propertyPath: 'compatibleAttachmentPointTags.Array.data[0]'
+      value: Motor_Magnet_For_Propeller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3531949445215867218, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3220067843042557312}
+    - targetCorrespondingSourceObject: {fileID: 7322139732616761978, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6855456417975233932}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+--- !u!114 &45736923851277259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3535951925291700716, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23ada9d5276b2b439525d19784f35fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &50742158627586933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3531949445215867218, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4637425170045221027 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8208713470491273860, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f8cb8d9786e7646a72e7617134284b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &6065561160063500381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7322139732616761978, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6595618346715642702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7653888488249518441, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f18942af845acf4c82e4d7ae420dbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8312965834294433101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4822742317763692394, guid: d6f745e3377293548a7f96571008b00e, type: 3}
+  m_PrefabInstance: {fileID: 3580437535074587175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cb0823ac876c46b648a7fab20b413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

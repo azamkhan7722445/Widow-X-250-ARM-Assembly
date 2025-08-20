@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &97127363171805312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76443164883921196}
+  - component: {fileID: 731509236749337312}
+  m_Layer: 0
+  m_Name: MagnetAttractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &76443164883921196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97127363171805312}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9119895685458901104}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731509236749337312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97127363171805312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f18942af845acf4c82e4d7ae420dbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNTRSP: {fileID: 0}
+  alignmentAxisAsAttracted: 1
+  magnetRadius: 0.02
+  compatibleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  additionalCompatibleLayer: 
+  addObjectLayerToCompatibleLayers: 1
+  didDetectProximityMagnetThisFrame: 0
+  attractorMagnetTagRequirement: 0
+  requiredTagsInAttractor: []
+  instantSnap: 1
+  snapDuration: 1
+  magnetLayer: Magnets
+  magnetCoordinator: {fileID: 0}
+  onSnapToMagnet:
+    m_PersistentCalls:
+      m_Calls: []
+  enableProximityDetectionWhileGrabbed: 0
+  onMagnetDetectedInProximity:
+    m_PersistentCalls:
+      m_Calls: []
+  onMagnetProximity:
+    m_PersistentCalls:
+      m_Calls: []
+  onMagnetLeavingProximity:
+    m_PersistentCalls:
+      m_Calls: []
+  audioType: 
+  debug: 1
+  debugColor: {r: 0, g: 1, b: 0, a: 0.2}
+--- !u!1001 &1262352881544854916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 76443164883921196}
+    m_Modifications:
+    - target: {fileID: 129425708308147782, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744479323978671675, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 220824a835840dd4aa8e0da1cb2b11f4, type: 2}
+    - target: {fileID: 5107323968366471227, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: visualSize
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107323968366471227, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: displayPowerVisualForAttractorMagnet
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840959031764148062, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_Name
+      value: MagnetVisual
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+--- !u!4 &9119895685458901104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8004206672208643572, guid: fcf34a81e057e484cbeb5e6dda4fce3b, type: 3}
+  m_PrefabInstance: {fileID: 1262352881544854916}
+  m_PrefabAsset: {fileID: 0}
