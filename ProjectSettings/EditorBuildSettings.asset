@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Training/Scene/Drone Training.unity
     guid: 09e3ea9a4c72c774fa72d0727ecefc1b
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b20e725608cc44d4cba54ffd18d479a2, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7a27ee36c977af34d8c2fdcc7d9ae541, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4a6ea8f9ebb0bf148b3a3e4a09628b48, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a685b51d137e70b4f94ecde07c90bcc1, type: 2}
   m_UseUCBPForAssetBundles: 0
