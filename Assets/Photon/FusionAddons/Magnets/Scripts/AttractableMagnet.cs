@@ -154,10 +154,10 @@ namespace Fusion.XRShared.GrabbableMagnet
         public void RestoreInitialMovingRoot()
         {
             if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
-            {
-                // agar non-grabbable hai to kuch mat karo
-                return;
-            }
+{
+    // agar non-grabbable hai to kuch mat karo
+    return;
+}
             rootNTRSP = initialRootNTRSP;
         }
 
@@ -363,6 +363,12 @@ namespace Fusion.XRShared.GrabbableMagnet
         // Immediatly move attractable magnet to match current attractor position
         public void InstantSnap(IAttractorMagnet magnet, float progress = 1)
         {
+            if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
+            {
+                // Non-grabbable = sirf attach dikhao, move/rotate mat karo
+                print("anees");
+                return;
+            }
             if (rb && rb.isKinematic == false)
             {
 #if UNITY_6000_0_OR_NEWER
