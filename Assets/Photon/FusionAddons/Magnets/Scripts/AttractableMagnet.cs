@@ -546,6 +546,10 @@ namespace Fusion.XRShared.GrabbableMagnet
 
         void ApplyRotation(Quaternion targetRotation, float progress)
         {
+            if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
+            {
+                return; // non-grabbable ko move/rotate mat karo
+            }
             var localMagnetRotation = Quaternion.Inverse(rootNTRSP.transform.rotation) * transform.rotation;
             var rotation = targetRotation * Quaternion.Inverse(localMagnetRotation);
 
@@ -560,6 +564,10 @@ namespace Fusion.XRShared.GrabbableMagnet
 
         void ApplyPosition(Vector3 targetPosition, float progress)
         {
+            if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
+            {
+                return; // non-grabbable ko move/rotate mat karo
+            }
             var position = targetPosition - transform.position + rootNTRSP.transform.position;
             if (progress < 1) position = Vector3.Lerp(rootNTRSP.transform.position, position, progress);
             if (rb)
