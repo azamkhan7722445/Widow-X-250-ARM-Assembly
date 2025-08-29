@@ -1,13 +1,15 @@
 using Fusion.Addons.Containment;
 using Fusion.XRShared.GrabbableMagnet;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Fusion.Addons.StructureCohesion
 {
     public class MagnetStructureAttachmentPoint : MagnetAttachmentPoint, IStructurePartPoint, IMagnetConfigurator
     {
+        [Header("Grab Settings")]
+        public bool IsNonGrabbable = false; // Inspector me tick karo agar object non-grabbable hona chahiye
+        public bool IsGrabbable = true;     // Agar tumhe explicitly grabbable banana ho
+
         #region Structure
         public Structure CurrentStructure => StructurePart == null ? null : StructurePart.CurrentStructure;
         public StructurePart StructurePart { get; set; } = null;
@@ -29,7 +31,7 @@ namespace Fusion.Addons.StructureCohesion
             }
             return false;
         }
-        
+
         public bool IsMagnetActive()
         {
             if (AttachedPoint != null || attachedToPoint != null || requestedNewAttachedPoint != null)
@@ -39,6 +41,7 @@ namespace Fusion.Addons.StructureCohesion
             return true;
         }
         #endregion
+
         protected override bool ApplyAutomaticMagnetAttachment => false;
 
         protected override void Awake()
@@ -57,12 +60,37 @@ namespace Fusion.Addons.StructureCohesion
             }
         }
 
+        //  Modified logic
         public override bool IsValidAttractingMagnet(IAttractorMagnet otherMagnet, out AttachmentPoint attachmentPoint)
         {
             var structurePoint = otherMagnet.MagnetConfigurator as MagnetStructureAttachmentPoint;
             attachmentPoint = structurePoint;
-            return structurePoint != null;
+
+            if (structurePoint == null)
+                return false;
+
+            // Agar ye NonGrabbable hai aur dusra Grabbable hai
+            if (IsNonGrabbable && structurePoint.IsGrabbable)
+            {
+                // Sirf logical connection allow karo (movement nahi)
+                return true;
+            }
+
+            return true;
+        }
+
+        // Grabbed hone par check
+        public void OnGrabbed()
+        {
+            // Agar ye object non-grabbable hai to move mat karo
+            if (IsNonGrabbable)
+            {
+                Debug.Log($"{gameObject.name} is Non-Grabbable. It will not move with grab.");
+                return; // No movement
+            }
+
+            // Warna normal grab logic
+            Debug.Log($"{gameObject.name} grabbed normally.");
         }
     }
 }
-

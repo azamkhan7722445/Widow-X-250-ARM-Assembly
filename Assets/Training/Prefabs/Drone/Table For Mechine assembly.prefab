@@ -556,6 +556,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 1
+  IsGrabbable: 0
 --- !u!114 &3916508480190183492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3749,6 +3751,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &914718031807352839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5830,6 +5834,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &3506536323454145815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8002,6 +8008,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &4501833081285560451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9871,6 +9879,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &2632745927518050872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11883,6 +11893,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &6831739091573500008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12720,6 +12732,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &3743272636656900684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14747,6 +14761,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &6919785493864026008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16519,6 +16535,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &5762264646410579676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17513,6 +17531,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &8835954629038256719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18025,6 +18045,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &2342116528233452045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20603,6 +20625,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &6946202048806184661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21086,6 +21110,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &646584431922486485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24747,6 +24773,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &5139722280813079479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30810,6 +30838,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &5976885289148631290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34246,6 +34276,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &2593748135482454060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45517,6 +45549,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &7018517301151249264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46223,6 +46257,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &2523560463193030563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47083,6 +47119,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &6363175754778530512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47400,6 +47438,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &3652896444057064419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49929,6 +49969,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &4304384047279305192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51686,6 +51728,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  IsGrabbable: 1
 --- !u!114 &924431780722633974
 MonoBehaviour:
   m_ObjectHideFlags: 0
