@@ -7,8 +7,7 @@ namespace Fusion.Addons.StructureCohesion
     public class MagnetStructureAttachmentPoint : MagnetAttachmentPoint, IStructurePartPoint, IMagnetConfigurator
     {
         [Header("Grab Settings")]
-        public bool IsNonGrabbable = false; // Inspector me tick karo agar object non-grabbable hona chahiye
-        public bool IsGrabbable = true;     // Agar tumhe explicitly grabbable banana ho
+        public bool IsNonGrabbable = false; // Agar tick hai  grab ke sath move nahi karega
 
         #region Structure
         public Structure CurrentStructure => StructurePart == null ? null : StructurePart.CurrentStructure;
@@ -69,27 +68,24 @@ namespace Fusion.Addons.StructureCohesion
             if (structurePoint == null)
                 return false;
 
-            // Agar ye NonGrabbable hai aur dusra Grabbable hai
-            if (IsNonGrabbable && structurePoint.IsGrabbable)
+            // Agar ye NonGrabbable hai aur dusra Grabbable hai  sirf logical connection
+            if (IsNonGrabbable && !structurePoint.IsNonGrabbable)
             {
-                // Sirf logical connection allow karo (movement nahi)
-                return true;
+                return true; // connection hoga but move nahi karega
             }
 
             return true;
         }
 
-        // Grabbed hone par check
+        //  Grabbed hone par check
         public void OnGrabbed()
         {
-            // Agar ye object non-grabbable hai to move mat karo
             if (IsNonGrabbable)
             {
                 Debug.Log($"{gameObject.name} is Non-Grabbable. It will not move with grab.");
-                return; // No movement
+                return; // Movement block
             }
 
-            // Warna normal grab logic
             Debug.Log($"{gameObject.name} grabbed normally.");
         }
     }

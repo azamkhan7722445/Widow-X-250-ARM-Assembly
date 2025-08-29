@@ -143,11 +143,21 @@ namespace Fusion.XRShared.GrabbableMagnet
 
         public void ChangeMovingRoot(NetworkTRSP root)
         {
+            if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
+            {
+                // agar non-grabbable hai to root change na ho
+                return;
+            }
             rootNTRSP = root;
         }
 
         public void RestoreInitialMovingRoot()
         {
+            if (MagnetConfigurator is Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint point && point.IsNonGrabbable)
+            {
+                // agar non-grabbable hai to kuch mat karo
+                return;
+            }
             rootNTRSP = initialRootNTRSP;
         }
 
