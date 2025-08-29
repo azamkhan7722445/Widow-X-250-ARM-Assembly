@@ -166,7 +166,7 @@ namespace Fusion.XRShared.GrabbableMagnet
         {
             if (CheckOnUngrab)
             {
-                CheckMagnetProximity();
+                //CheckMagnetProximity();
             }
         }
 
