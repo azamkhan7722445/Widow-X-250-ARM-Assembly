@@ -8,13 +8,52 @@ namespace Fusion.Addons.StructureCohesion
     {
         [Header("Grab Settings")]
         public bool IsNonGrabbable = false; // Agar tick hai  grab ke sath move nahi karega
-
+        public bool dis = false;
         #region Structure
         public Structure CurrentStructure => StructurePart == null ? null : StructurePart.CurrentStructure;
         public StructurePart StructurePart { get; set; } = null;
         #endregion
 
         #region IMagnetGroupIdentificator
+
+
+        // MagnetStructureAttachmentPoint ke andar add karo
+
+        public void DetachIfNonGrabbable()
+        {
+            // Agar attached object hai aur wo MagnetStructureAttachmentPoint type ka hai
+            if (AttachedPoint != null && AttachedPoint is MagnetStructureAttachmentPoint magnetPoint)
+            {
+                print("anees");
+                // Agar attached object non-grabbable hai
+                if (magnetPoint.IsNonGrabbable)
+                {
+                    print("anees");
+                    Debug.Log($"Detaching non-grabbable: {magnetPoint.gameObject.name}");
+
+                    // Detach logic
+                    magnetPoint.AttachedPoint = null;
+                    this.AttachedPoint = null;
+
+                    // Reset internal references
+                    magnetPoint.attachedToPoint = null;
+                    magnetPoint.requestedNewAttachedPoint = null;
+
+                    // Optional: detach from structure
+                    magnetPoint.StructurePart = null;
+                }
+            }
+        }
+
+        public void Update()
+        {
+            if (dis)
+            {
+                DetachIfNonGrabbable();
+                dis = false;
+            }
+        }
+
         public bool IsInSameGroup(IMagnetConfigurator otherIdentificator)
         {
             if (otherIdentificator is MagnetStructureAttachmentPoint otherAttachmentPoint)

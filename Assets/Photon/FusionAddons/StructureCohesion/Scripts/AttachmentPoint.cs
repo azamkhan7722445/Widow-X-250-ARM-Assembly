@@ -417,15 +417,6 @@ namespace Fusion.Addons.StructureCohesion
             }
         }
 
-        public void Detach()
-        {
-            if (AttachedPoint != null)
-            {
-                AttachedPoint.RequestAttachmentDeletion();
-                AttachedPoint = null;
-            }
-        }
-
         // Actualy remove the attachment, and trigger effets (with UnregisterAttachment). Can only be used by the state authority
         public void DeleteAttachment(AttachmentPoint attachedPoint)
         {
