@@ -8005,7 +8005,7 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
-  IsNonGrabbable: 0
+  IsNonGrabbable: 1
 --- !u!114 &4501833081285560451
 MonoBehaviour:
   m_ObjectHideFlags: 0
