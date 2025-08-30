@@ -375,21 +375,8 @@ namespace Fusion.Addons.StructureCohesion
             {
                 return;
             }
-
-
             if (TryFindStructureClosestAttachmentPoint(out StructurePart currentStructureClosestPart, out AttachmentPoint currentStructureClosestPoint, out AttachmentPoint closestExternalPoint, out var distance, excludeSameGroupId: true))
             {
-
-
-                var a = currentStructureClosestPoint as Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint;
-                var b = closestExternalPoint as Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint;
-                if ((a != null && a.IsNonGrabbable) || (b != null && b.IsNonGrabbable))
-                {
-                    print("anees11");
-                    // sirf snap ka event/feedback chalega (tumne AttractableMagnet me move/rotate already block kiya hua hai)
-                    return;
-                   
-                }
                 // Create attachment (will be applied during FUN)
                 if (closestExternalPoint is IStructurePartPoint closestExternalStructurePoint)
                 {
