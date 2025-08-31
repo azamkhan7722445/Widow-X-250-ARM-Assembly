@@ -515,7 +515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4218512661570299223
 Transform:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.9999999, y: 1.0000005, z: 1.0000005}
   m_Center: {x: 0, y: -0.000000014901168, z: -4.440892e-16}
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120995823176419854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
   m_Name: 
@@ -655,6 +655,8 @@ MonoBehaviour:
   - {fileID: 3204969584196542215}
   - {fileID: 76367412821298316}
   tableTrigger: {fileID: 8271513298393736462}
+  network: {fileID: 0}
+  check: 0
 --- !u!1 &124790142812876868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4429,7 +4431,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2392737127030342907}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4364321706648656489}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -8083,7 +8109,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2587344348307783494}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8007422354859104721}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -11044,7 +11094,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6281786439042454261}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2392737127030342907}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -16675,7 +16749,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3738698501893478028}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2587344348307783494}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -18560,6 +18658,7 @@ GameObject:
   - component: {fileID: 2804663521909573879}
   - component: {fileID: 5456480071134421366}
   - component: {fileID: 5478728276706381329}
+  - component: {fileID: 3102024953679588728}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -18683,6 +18782,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &3102024953679588728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2235503067282652396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 1705493112717259677}
+  - {fileID: 8007422354859104721}
+  tableTrigger: {fileID: 5456480071134421366}
+  network: {fileID: 2587344348307783494}
+  check: 0
 --- !u!1 &2236535334770384550
 GameObject:
   m_ObjectHideFlags: 0
@@ -19388,7 +19505,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7828055745728611183}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3738698501893478028}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -21563,6 +21704,7 @@ GameObject:
   - component: {fileID: 3926693669075375842}
   - component: {fileID: 3141594358671503184}
   - component: {fileID: 7286690615429331077}
+  - component: {fileID: 387215707010149170}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -21686,6 +21828,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &387215707010149170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727676133873818893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 6281786439042454261}
+  tableTrigger: {fileID: 3141594358671503184}
+  network: {fileID: 1705493112717259677}
+  check: 0
 --- !u!1 &2744826554525050777
 GameObject:
   m_ObjectHideFlags: 0
@@ -24586,7 +24745,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705493112717259677}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6281786439042454261}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -28940,6 +29123,7 @@ GameObject:
   - component: {fileID: 6239374853427652200}
   - component: {fileID: 993281106036246004}
   - component: {fileID: 6639053558253271491}
+  - component: {fileID: 3539398843618857160}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -29063,6 +29247,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &3539398843618857160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704140385655896873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 3738698501893478028}
+  tableTrigger: {fileID: 993281106036246004}
+  network: {fileID: 3204969584196542215}
+  check: 0
 --- !u!1 &3705087987549650783
 GameObject:
   m_ObjectHideFlags: 0
@@ -32033,6 +32234,8 @@ MonoBehaviour:
   - {fileID: 3204969584196542215}
   - {fileID: 76367412821298316}
   tableTrigger: {fileID: 8271513298393736462}
+  network: {fileID: 0}
+  check: 0
 --- !u!1 &4101891807116819946
 GameObject:
   m_ObjectHideFlags: 0
@@ -34948,7 +35151,31 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8007422354859104721}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1705493112717259677}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -44072,6 +44299,7 @@ GameObject:
   - component: {fileID: 4123381116926070618}
   - component: {fileID: 3198001210183626774}
   - component: {fileID: 6665344835930279749}
+  - component: {fileID: 6920500389070977639}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -44195,6 +44423,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &6920500389070977639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604940955974518731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 2587344348307783494}
+  tableTrigger: {fileID: 3198001210183626774}
+  network: {fileID: 3738698501893478028}
+  check: 0
 --- !u!1 &5614268670219777267
 GameObject:
   m_ObjectHideFlags: 0
@@ -45426,6 +45671,7 @@ GameObject:
   - component: {fileID: 6120883611355228399}
   - component: {fileID: 3173491873140636371}
   - component: {fileID: 3205727398910913795}
+  - component: {fileID: 5252993167718583285}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -45549,6 +45795,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &5252993167718583285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760459369547893050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 4364321706648656489}
+  - {fileID: 2392737127030342907}
+  tableTrigger: {fileID: 3173491873140636371}
+  network: {fileID: 6281786439042454261}
+  check: 0
 --- !u!1 &5763006237158146092
 GameObject:
   m_ObjectHideFlags: 0
@@ -50084,6 +50348,7 @@ GameObject:
   - component: {fileID: 5848041610032628014}
   - component: {fileID: 6741015953197023304}
   - component: {fileID: 5899781963234950348}
+  - component: {fileID: 6455093380304797712}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -50207,6 +50472,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &6455093380304797712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375928864719943683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 7828055745728611183}
+  tableTrigger: {fileID: 6741015953197023304}
+  network: {fileID: 7828055745728611183}
+  check: 0
 --- !u!1 &6381098323224448541
 GameObject:
   m_ObjectHideFlags: 0
@@ -55928,7 +56210,7 @@ Transform:
   m_GameObject: {fileID: 7096776009713071637}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6087606, y: -0, z: -0, w: 0.793354}
-  m_LocalPosition: {x: 0.298, y: 1.408, z: -0.9737}
+  m_LocalPosition: {x: 0.298, y: 1.408, z: -0.9633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59930,6 +60212,7 @@ GameObject:
   - component: {fileID: 6419484754364367667}
   - component: {fileID: 4527865959903655597}
   - component: {fileID: 4567265514920597005}
+  - component: {fileID: 6672366915392528301}
   m_Layer: 0
   m_Name: plate for flags
   m_TagString: Untagged
@@ -60053,6 +60336,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &6672366915392528301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638461417258523148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 3204969584196542215}
+  tableTrigger: {fileID: 4527865959903655597}
+  network: {fileID: 0}
+  check: 1
 --- !u!1 &7653001125852430814
 GameObject:
   m_ObjectHideFlags: 0
