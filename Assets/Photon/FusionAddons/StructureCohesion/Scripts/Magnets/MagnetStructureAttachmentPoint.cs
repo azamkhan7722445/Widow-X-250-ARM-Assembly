@@ -1,6 +1,7 @@
 using Fusion.Addons.Containment;
 using Fusion.XRShared.GrabbableMagnet;
 using UnityEngine;
+using Fusion.XR.Shared.Grabbing;
 
 namespace Fusion.Addons.StructureCohesion
 {
@@ -13,6 +14,7 @@ namespace Fusion.Addons.StructureCohesion
         public Structure CurrentStructure => StructurePart == null ? null : StructurePart.CurrentStructure;
         public StructurePart StructurePart { get; set; } = null;
         #endregion
+        NetworkGrabbable networkGrabbable;
 
         #region IMagnetGroupIdentificator
 
@@ -62,7 +64,7 @@ namespace Fusion.Addons.StructureCohesion
             if (dis)
             {
                 DetachIfNonGrabbableSafe();
-                 dis = false;
+                dis = false;
             }
         }
 
@@ -98,7 +100,8 @@ namespace Fusion.Addons.StructureCohesion
         {
             base.Awake();
             StructurePart = GetComponentInParent<StructurePart>();
-            
+            networkGrabbable = GetComponentInParent<NetworkGrabbable>();
+
             if (attractableMagnet != null)
             {
                 attractableMagnet.CheckOnUngrab = false;
@@ -109,6 +112,12 @@ namespace Fusion.Addons.StructureCohesion
             {
                 attractorMagnet.MagnetConfigurator = this;
             }
+            if (networkGrabbable != null)
+            {
+                networkGrabbable.onDidGrab.AddListener(OnGrabbed);
+            }
+
+
 
             // Add listener for grab event to call OnGrabbed
             // Replace 'Grabbable' with the correct component type, e.g., XRGrabInteractable or remove if not needed
@@ -117,6 +126,13 @@ namespace Fusion.Addons.StructureCohesion
             // {
             //     grabbable.selectEntered.AddListener((args) => OnGrabbed());
             // }
+        }
+        public void OnGrabbed(NetworkGrabber grabber)
+        {
+            if (!Object.HasStateAuthority) return;
+
+            // Grab hone par detach check
+            DetachIfNonGrabbableSafe();
         }
 
         //  Modified logic
