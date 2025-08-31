@@ -619,17 +619,20 @@ namespace Fusion.Addons.StructureCohesion
                     // Agar related part ka weight zyada ya equal hai  usko move mat karo
                     return;
                 }
-                // relatedPoint.RepositionToMatchRelatedPoint(localPoint);
-                // structurePoint.StructurePart.RepositionAttachedParts(this);
-                structurePoint.StructurePart.transform.position =
-                localPoint.transform.position;
-
-                //  Snap rotation (exact match)
-                structurePoint.StructurePart.transform.rotation =
-                    localPoint.transform.rotation;
-
-                //  Update attachments recursively
+                 relatedPoint.RepositionToMatchRelatedPoint(localPoint);
                 structurePoint.StructurePart.RepositionAttachedParts(this);
+                //Transform relatedPartTransform = structurePoint.StructurePart.transform;
+
+                //// Calculate offset of relatedPoint in its own local space
+                //Vector3 offsetPos = relatedPartTransform.position - relatedPoint.transform.position;
+                //Quaternion offsetRot = Quaternion.Inverse(relatedPoint.transform.rotation) * relatedPartTransform.rotation;
+
+                //// Snap relatedPoint to localPoint
+                //relatedPartTransform.position = localPoint.transform.position + (localPoint.transform.rotation * offsetPos);
+                //relatedPartTransform.rotation = localPoint.transform.rotation * offsetRot;
+
+                //// Update attachments recursively
+                //structurePoint.StructurePart.RepositionAttachedParts(this);
             }
         }
         #endregion
