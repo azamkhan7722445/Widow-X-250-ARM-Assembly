@@ -32,7 +32,12 @@ namespace Fusion.Addons.StructureCohesion
         }
         private void OnDidGrabStart(NetworkGrabber grabber)
         {
-            
+            // Try to detach if the attached point is non-grabbable
+            var magnetPoint = GetComponentInParent<Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint>();
+            if (magnetPoint != null)
+            {
+               magnetPoint.DetachIfNonGrabbableSafe(); 
+            }
         }
         private void OnDidUngrab()
         {
