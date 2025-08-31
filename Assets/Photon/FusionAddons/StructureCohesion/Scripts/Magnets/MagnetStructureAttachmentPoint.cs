@@ -19,38 +19,34 @@ namespace Fusion.Addons.StructureCohesion
 
         // MagnetStructureAttachmentPoint ke andar add karo
 
-        public void DetachIfNonGrabbable()
+        public void DetachIfNonGrabbableSafe()
         {
-            // Agar attached object hai aur wo MagnetStructureAttachmentPoint type ka hai
             if (AttachedPoint != null && AttachedPoint is MagnetStructureAttachmentPoint magnetPoint)
             {
                 print("anees");
-                // Agar attached object non-grabbable hai
                 if (magnetPoint.IsNonGrabbable)
                 {
-                    print("anees");
-                    Debug.Log($"Detaching non-grabbable: {magnetPoint.gameObject.name}");
+                    Debug.Log($"Detaching non-grabbable safely: {magnetPoint.gameObject.name}");
 
-                    // Detach logic
+                    // Proper Fusion-safe detach
+                    magnetPoint.UnregisterAttachment(magnetPoint.AttachedPoint, true); // true for change detection
+                    this.UnregisterAttachment(this.AttachedPoint, true);
+                    print("anees1");
+                    // Optional: reset local reference after unregister
                     magnetPoint.AttachedPoint = null;
                     this.AttachedPoint = null;
-
-                    // Reset internal references
-                    magnetPoint.attachedToPoint = null;
-                    magnetPoint.requestedNewAttachedPoint = null;
-
-                    // Optional: detach from structure
-                    magnetPoint.StructurePart = null;
+                    print("anees3");
                 }
             }
         }
+
 
         public void Update()
         {
             if (dis)
             {
-                DetachIfNonGrabbable();
-                dis = false;
+                DetachIfNonGrabbableSafe();
+                 dis = false;
             }
         }
 

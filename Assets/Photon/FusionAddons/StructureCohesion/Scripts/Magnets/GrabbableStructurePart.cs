@@ -27,8 +27,13 @@ namespace Fusion.Addons.StructureCohesion
             base.Awake();
             networkGrabbable = GetComponentInParent<NetworkGrabbable>();
             networkGrabbable.onDidUngrab.AddListener(OnDidUngrab);
-        }
 
+            networkGrabbable.onDidGrab.AddListener(OnDidGrabStart);
+        }
+        private void OnDidGrabStart(NetworkGrabber grabber)
+        {
+            
+        }
         private void OnDidUngrab()
         {
             AttachClosestPartInProximity();
