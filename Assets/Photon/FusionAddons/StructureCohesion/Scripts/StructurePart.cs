@@ -619,7 +619,16 @@ namespace Fusion.Addons.StructureCohesion
                     // Agar related part ka weight zyada ya equal hai  usko move mat karo
                     return;
                 }
-                relatedPoint.RepositionToMatchRelatedPoint(localPoint);
+                // relatedPoint.RepositionToMatchRelatedPoint(localPoint);
+                // structurePoint.StructurePart.RepositionAttachedParts(this);
+                structurePoint.StructurePart.transform.position =
+                localPoint.transform.position;
+
+                //  Snap rotation (exact match)
+                structurePoint.StructurePart.transform.rotation =
+                    localPoint.transform.rotation;
+
+                //  Update attachments recursively
                 structurePoint.StructurePart.RepositionAttachedParts(this);
             }
         }
