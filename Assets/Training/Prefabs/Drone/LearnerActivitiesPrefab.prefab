@@ -9923,6 +9923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5042316605387512211, guid: ba8c403a761e5f241ad0c9b01593dd07, type: 3}
+      propertyPath: SortKey
+      value: 3096713373
+      objectReference: {fileID: 0}
     - target: {fileID: 5280498335730111774, guid: ba8c403a761e5f241ad0c9b01593dd07, type: 3}
       propertyPath: m_Name
       value: Table For Mechine assembly
