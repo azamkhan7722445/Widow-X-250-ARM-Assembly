@@ -2059,7 +2059,7 @@ GameObject:
   - component: {fileID: 1310213167022367592}
   - component: {fileID: 3633028630115264934}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Bolt_GRAPPER
+  m_Name: step3 NetworkGrabbable Variant With Magnet Propeller_Bolt_GRAPPER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,7 +2133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343687297183556529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -5152,7 +5152,7 @@ GameObject:
   - component: {fileID: 3780063855126614226}
   - component: {fileID: 9097060747802556783}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Cap-SARWO_HORN_SCREW
+  m_Name: step7 NetworkGrabbable Variant With Magnet Propeller_Cap-SARWO_HORN_SCREW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5224,7 +5224,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753980952839257201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -28993,6 +28993,61 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!1 &4078083888700131448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2330069074076526131}
+  - component: {fileID: 4205838703983431509}
+  m_Layer: 0
+  m_Name: grame manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2330069074076526131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078083888700131448}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.87406826, y: 1.6380084, z: -0.9920342}
+  m_LocalScale: {x: 1.6666665, y: 1.6666662, z: 1.6666662}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4756867658837413796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4205838703983431509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078083888700131448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb105280f1bc624c89d352156743c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 4364321706648656489}
+  - {fileID: 2392737127030342907}
+  - {fileID: 6281786439042454261}
+  - {fileID: 1705493112717259677}
+  - {fileID: 8007422354859104721}
+  - {fileID: 2587344348307783494}
+  - {fileID: 3738698501893478028}
+  - {fileID: 3204969584196542215}
+  - {fileID: 76367412821298316}
+  tableTrigger: {fileID: 6775734307948005614}
 --- !u!1 &4101891807116819946
 GameObject:
   m_ObjectHideFlags: 0
@@ -32683,7 +32738,7 @@ GameObject:
   - component: {fileID: 233943518010911578}
   - component: {fileID: 2330719197808522585}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW (1)
+  m_Name: step1 NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46233,7 +46288,7 @@ GameObject:
   - component: {fileID: 2389067007968614645}
   - component: {fileID: 8690037801295675386}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Bolt-Rubber_washer
+  m_Name: step9 NetworkGrabbable Variant With Magnet Propeller_Bolt-Rubber_washer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46307,7 +46362,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6569208341674172781}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -54047,7 +54102,7 @@ GameObject:
   - component: {fileID: 4483470457039905373}
   - component: {fileID: 8120185034766773093}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Bolt-Sarvo_Horn_Defected
+  m_Name: step8 NetworkGrabbable Variant With Magnet Propeller_Bolt-Sarvo_Horn_Defected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54121,7 +54176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7631887708694193030}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -55729,7 +55784,7 @@ GameObject:
   - component: {fileID: 4698636380608951917}
   - component: {fileID: 3569959590596200477}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW
+  m_Name: step4 NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55801,7 +55856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867265401868729635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -57258,7 +57313,7 @@ GameObject:
   - component: {fileID: 8760209278981401588}
   - component: {fileID: 6473731266707726650}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW
+  m_Name: step2 NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57330,7 +57385,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8032532522625444653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -62495,7 +62550,7 @@ GameObject:
   - component: {fileID: 832695584569305740}
   - component: {fileID: 4045188178952853227}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Bolt-S_SHAPE
+  m_Name: step6 NetworkGrabbable Variant With Magnet Propeller_Bolt-S_SHAPE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62569,7 +62624,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8732153997410640549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -63955,7 +64010,8 @@ GameObject:
   - component: {fileID: 8285079698746397461}
   - component: {fileID: 317856669507151653}
   m_Layer: 0
-  m_Name: NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW (1)
+  m_Name: step5 NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW
+    (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64027,7 +64083,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8892444904839214840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e29a5da46f946a43a21a0c03ef7d768, type: 3}
   m_Name: 
@@ -67191,10 +67247,72 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1575417522719356822}
-    m_AddedComponents: []
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2330069074076526131}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6775734307948005614}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2578455525028386435}
   m_SourcePrefab: {fileID: 100100000, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
 --- !u!4 &4756867658837413796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
   m_PrefabInstance: {fileID: 5010659840145565775}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5280498335730111774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33a0ba6653874b24183a84aa38b820a1, type: 3}
+  m_PrefabInstance: {fileID: 5010659840145565775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6775734307948005614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280498335730111774}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.4435706, y: 1.7999974, z: 0.05000001}
+  m_Center: {x: 0, y: -0.004491986, z: -6.3834944e-17}
+--- !u!54 &2578455525028386435
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280498335730111774}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
