@@ -1097,6 +1097,8 @@ MonoBehaviour:
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
+  IsNonGrabbable: 0
+  dis: 0
 --- !u!1001 &3304152299757368128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1168,6 +1170,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2b7058f3f445da347aaf41c02e014930, type: 3}
       propertyPath: m_Name
       value: plate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b7058f3f445da347aaf41c02e014930, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

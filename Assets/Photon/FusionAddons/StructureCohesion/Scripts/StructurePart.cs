@@ -613,6 +613,12 @@ namespace Fusion.Addons.StructureCohesion
                 {
                     return;
                 }
+
+                if (structurePoint.StructurePart.partWeight >= this.partWeight)
+                {
+                    // Agar related part ka weight zyada ya equal hai  usko move mat karo
+                    return;
+                }
                 relatedPoint.RepositionToMatchRelatedPoint(localPoint);
                 structurePoint.StructurePart.RepositionAttachedParts(this);
             }
