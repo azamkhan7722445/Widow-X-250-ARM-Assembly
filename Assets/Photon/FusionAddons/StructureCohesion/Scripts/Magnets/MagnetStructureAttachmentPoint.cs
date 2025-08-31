@@ -1,4 +1,5 @@
 using Fusion.Addons.Containment;
+using Fusion.XR.Shared.Grabbing;
 using Fusion.XRShared.GrabbableMagnet;
 using UnityEngine;
 
@@ -39,6 +40,7 @@ namespace Fusion.Addons.StructureCohesion
                 }
             }
         }
+
 
 
         public void Update()
@@ -82,6 +84,11 @@ namespace Fusion.Addons.StructureCohesion
         {
             base.Awake();
             StructurePart = GetComponentInParent<StructurePart>();
+            var grabbable = GetComponentInParent<NetworkGrabbable>();
+            if (grabbable != null)
+            {
+                grabbable.onDidGrab.AddListener(OnGrabbed);
+            }
             if (attractableMagnet != null)
             {
                 attractableMagnet.CheckOnUngrab = false;
@@ -93,7 +100,13 @@ namespace Fusion.Addons.StructureCohesion
                 attractorMagnet.MagnetConfigurator = this;
             }
         }
+        public void OnGrabbed(NetworkGrabber grabber)
+        {
+            if (!Object.HasStateAuthority) return;
 
+            // Grab hone par detach check
+            DetachIfNonGrabbableSafe();
+        }
         //  Modified logic
         public override bool IsValidAttractingMagnet(IAttractorMagnet otherMagnet, out AttachmentPoint attachmentPoint)
         {
@@ -113,15 +126,6 @@ namespace Fusion.Addons.StructureCohesion
         }
 
         //  Grabbed hone par check
-        public void OnGrabbed()
-        {
-            if (IsNonGrabbable)
-            {
-                Debug.Log($"{gameObject.name} is Non-Grabbable. It will not move with grab.");
-                return; // Movement block
-            }
-
-            Debug.Log($"{gameObject.name} grabbed normally.");
-        }
+       
     }
 }
