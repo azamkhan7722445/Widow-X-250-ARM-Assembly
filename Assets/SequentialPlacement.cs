@@ -27,12 +27,13 @@ public class SequentialPlacement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        print("hahahahaha" + parts.Count);
        
         
         
            
             // Current part ka collider (child me bhi ho sakta hai)
-            Collider partCollider = parts[currentIndex].GetComponentInChildren<Collider>();
+        Collider partCollider = parts[currentIndex].GetComponentInChildren<Collider>();
             
 
             if (partCollider != null && partCollider.bounds.Intersects(other.bounds))
