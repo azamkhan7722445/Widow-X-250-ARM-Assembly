@@ -34262,7 +34262,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4174327818073172123}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &4174801154727630375
 GameObject:
   m_ObjectHideFlags: 0
@@ -78508,7 +78508,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1410459031871785255, guid: 32043519eaf1cf84ebe2b55b4323a0dc, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7448096425102531648, guid: 32043519eaf1cf84ebe2b55b4323a0dc, type: 3}
       propertyPath: m_Enabled
