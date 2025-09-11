@@ -12,22 +12,23 @@ public class SequentialPlacement : NetworkBehaviour {
     public Collider tableTrigger;             // Table ke trigger collider
     public NetworkGrabbable network;
 
-    private int currentIndex = 0;             // Track current part
+    public int currentIndex = 0;             // Track current part
     public bool check1,check2,check;
     public string Tag,Tag1;
-
+   
     private void OnTriggerEnter(Collider other) {
        // if(!Object.HasStateAuthority) return; // sirf server/host trigger handle kare
 
-        Collider partCollider = parts[currentIndex].GetComponentInChildren<Collider>();
+       // Collider partCollider = parts[currentIndex].GetComponentInChildren<Collider>();
 
         if(other.tag==Tag) {
-            Debug.Log($"[Server] Part {currentIndex} placed on table.");
+            Debug.Log(other.tag+" heloo");
             RPC_HandlePlacement();
             transform.GetComponent<BoxCollider>().enabled = false;
         }
         else if (other.tag == Tag1 )
         {
+            Debug.Log(other.tag + " heloo");
             RPC_HandlePlacement();
             transform.GetComponent<BoxCollider>().enabled = false;
         }
@@ -37,8 +38,8 @@ public class SequentialPlacement : NetworkBehaviour {
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_HandlePlacement() {
         // part disable
-        transform.GetComponent<BoxCollider>().enabled = false;
-        parts[currentIndex].enabled = false;
+        //transform.GetComponent<BoxCollider>().enabled = false;
+       // parts[currentIndex].enabled = false;
 
         // snap to target position (agar available hai)
        // if(currentIndex < targetPoints.Count) {
@@ -58,14 +59,14 @@ public class SequentialPlacement : NetworkBehaviour {
             }
             else if(currentIndex == 2) {
                 network.enabled = true;
-                currentIndex = 0;
+               // currentIndex = 0;
             }
         }
         else if(parts.Count == 1) {
             currentIndex++;
             if(currentIndex == 1 && !check) {
                 network.enabled = true;
-                currentIndex = 0;
+               // currentIndex = 0;
             }
         }
         Invoke("enable_Disable", 2f);

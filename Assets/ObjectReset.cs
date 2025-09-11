@@ -1,5 +1,8 @@
 using UnityEngine;
 using Fusion;
+using System.Collections.Generic;
+using System;
+using Fusion.XR.Shared.Grabbing;
 
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
@@ -7,7 +10,9 @@ public class ObjectReset : NetworkBehaviour {
     public string anees;
     private Vector3 startPos;
     private Quaternion startRot;
-
+    public List<NetworkGrabbable> parts;
+    [Networked] public int count { get; set; }
+    public List<SequentialPlacement> Acctive_count = new List<SequentialPlacement>();
     void Start() {
         if(target != null) {
             startPos = target.position;
@@ -31,5 +36,29 @@ public class ObjectReset : NetworkBehaviour {
         }
 
         Debug.Log("Object reset to its initial position & rotation.");
+    }
+
+
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+   public void RPC_Reset_Next()
+   {
+        if(parts.Count-1> count)
+        {
+            parts[count].enabled = false;
+            count++;
+            parts[count].enabled = true;
+
+        }
+   }
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RPC_Reset_previous()
+    {
+        if ( count>=0)
+        {
+            parts[count].enabled = false;
+            count--;
+            parts[count].enabled = true;
+
+        }
     }
 }
