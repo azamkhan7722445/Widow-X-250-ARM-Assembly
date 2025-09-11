@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - main_screw
+  - Garpper
+  - s_shape_screw
+  - s_shape
+  - sarwo_horn
+  - sarwo_screw
+  - main_screw1
+  - sarwo_screw1
   layers:
   - Default
   - TransparentFX
