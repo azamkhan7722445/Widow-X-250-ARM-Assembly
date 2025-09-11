@@ -55,9 +55,18 @@ public class ObjectReset : NetworkBehaviour {
     {
         if ( count>=0)
         {
+            
             parts[count].enabled = false;
             count--;
-            parts[count].enabled = true;
+            if (count == 7)
+            {
+
+            }
+            else
+            {
+                parts[count].enabled = true;
+            }
+            
 
         }
     }
