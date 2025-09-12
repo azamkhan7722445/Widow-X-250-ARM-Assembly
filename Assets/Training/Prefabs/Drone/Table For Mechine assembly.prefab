@@ -2550,6 +2550,7 @@ GameObject:
   - component: {fileID: 2793630147366432216}
   - component: {fileID: 1310213167022367592}
   - component: {fileID: 3633028630115264934}
+  - component: {fileID: 6817220272068114279}
   m_Layer: 0
   m_Name: step3 NetworkGrabbable Variant With Magnet Propeller_Bolt_GRAPPER
   m_TagString: Untagged
@@ -2757,6 +2758,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &6817220272068114279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343687297183556529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 0
 --- !u!1 &350567860301675605
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,36 +4543,10 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8085629749248137766}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8085629749248137766}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -8617,36 +8605,10 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7102718649211075205}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7102718649211075205}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -11762,35 +11724,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 9158473760978845697}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9158473760978845697}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -17489,36 +17425,10 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2242623208908365958}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2242623208908365958}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -19828,7 +19738,6 @@ MonoBehaviour:
   - {fileID: 1141792075195004977}
   - {fileID: 7102718649211075205}
   - {fileID: 2242623208908365958}
-  - {fileID: 4061727827219723075}
   - {fileID: 4061727827219723075}
   extra_mag: {fileID: 5223378531518649587}
   nxt: {fileID: 1525799128261749334}
@@ -26243,36 +26152,10 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2915251565484281435}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2915251565484281435}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -68043,6 +67926,7 @@ GameObject:
   - component: {fileID: 5582418251431093572}
   - component: {fileID: 8760209278981401588}
   - component: {fileID: 6473731266707726650}
+  - component: {fileID: 3121837563811280291}
   m_Layer: 0
   m_Name: step2 NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW
   m_TagString: Untagged
@@ -68249,6 +68133,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &3121837563811280291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032532522625444653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 0
 --- !u!1 &8042006956141595001
 GameObject:
   m_ObjectHideFlags: 0
@@ -72663,10 +72560,9 @@ MonoBehaviour:
   onRegisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814489593633987154}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
+      - m_Target: {fileID: 3121837563811280291}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -72679,10 +72575,9 @@ MonoBehaviour:
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814489593633987154}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
+      - m_Target: {fileID: 3121837563811280291}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

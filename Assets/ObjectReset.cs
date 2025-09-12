@@ -66,10 +66,10 @@ public class ObjectReset : NetworkBehaviour {
 
 
                 }
-
+                parts[count].enabled = false;
                 parts[count].gameObject.transform.position = postion[count].position;
                 parts[count].gameObject.transform.rotation = postion[count].rotation;
-                parts[count].enabled = false;
+              
                 count++;
                 parts[count].enabled = true;
                 if (count < 7)
