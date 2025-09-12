@@ -9,6 +9,8 @@ namespace Fusion.Addons.StructureCohesion
     {
         [Header("Grab Settings")]
         public bool IsNonGrabbable = false; // Agar tick hai  grab ke sath move nahi karega
+
+        public bool check_attched=false;//added by anees for check object is attched or not 
         public bool dis = false;
         #region Structure
         public Structure CurrentStructure => StructurePart == null ? null : StructurePart.CurrentStructure;

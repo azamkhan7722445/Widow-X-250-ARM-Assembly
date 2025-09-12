@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System;
 using Fusion.XR.Shared.Grabbing;
 using UnityEngine.UI;
-
+using TMPro;
+using Fusion.Addons.StructureCohesion;
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
     public Transform target;   // jis object ko reset karna hai
@@ -12,17 +13,23 @@ public class ObjectReset : NetworkBehaviour {
     private Vector3 startPos;
     private Quaternion startRot;
     public List<NetworkGrabbable> parts;
-    public Button Next, Previous;
+    public Button Nextbtn, Previousbtn;
     [Networked] public int count { get; set; }
     public List<SequentialPlacement> Acctive_count = new List<SequentialPlacement>();
-    List<string> names = new List<string> { "First_MAIN-SCREW", "Second_MAIN-SCREW", "GRAPPER", "First_S_SHAPE-SCREW", "Second_S_SHAPE-SCREW", "S_SHAPE", "SARWO_HORN_SCREW", "Sarvo_Horn_Defected", "Sarvo_Horn_Non_Defected" };
+    public List<string> names = new List<string> { "First_MAIN-SCREW", "Second_MAIN-SCREW", "GRAPPER", "First_S_SHAPE-SCREW", "Second_S_SHAPE-SCREW", "S_SHAPE", "SARWO_HORN_SCREW", "Sarvo_Horn_Defected", "Sarvo_Horn_Non_Defected" };
 
-    //List<Transform> postion = new List<string>
+    public List<Transform> postion = new List<Transform>();
+    public List<MagnetStructureAttachmentPoint> magnet= new List<MagnetStructureAttachmentPoint>();
+    public TextMeshProUGUI nxt,previous,Active;
     void Start() {
         if(target != null) {
             startPos = target.position;
             startRot = target.rotation;
         }
+
+        nxt.text = "Second_MAIN-SCREW";
+        Active.text = "Grab First_MAIN-SCREW";
+        previous.text = "";
     }
 
     // ye function call karo jab reset karna ho
@@ -49,42 +56,81 @@ public class ObjectReset : NetworkBehaviour {
    {
         if(parts.Count-1> count)
         {
+            if(!Previousbtn.gameObject.activeSelf) {
+
+                Previousbtn.gameObject.SetActive(true);
+
+
+            }
+           
+            parts[count].gameObject.transform.position = postion[count].position;
+            parts[count].gameObject.transform.rotation = postion[count].rotation;
             parts[count].enabled = false;
             count++;
             parts[count].enabled = true;
-
+            if(count < 7) {
+                nxt.text = names[count + 1];
+            }
+            else {
+                nxt.text = "";
+            }
+            if(count == 8) {
+                Nextbtn.gameObject.SetActive(false);
+            }
+            
+            Active.text = "Grab" + names[count];
+            previous.text = names[count - 1];
         }
 
         Invoke("enable_next_button", 2f);
-   }
+    }
 
 
 
     public void enable_next_button() {
-        Next.interactable = true;
+        Nextbtn.interactable = true;
     }
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void RPC_Reset_previous()
     {
+        if(!Nextbtn.gameObject.activeSelf) {
+
+            Nextbtn.gameObject.SetActive(true);
+
+
+        }
+
         if ( count>=0)
         {
             
+            
             parts[count].enabled = false;
             count--;
+            
             if (count == 7)
             {
-
+                count--;
+                parts[count].enabled = true;
             }
             else
             {
                 parts[count].enabled = true;
             }
-            
+            if(count == 0) {
+                previous.text = names[count];
+                Previousbtn.gameObject.SetActive(false);
+            }
+            else {
+                previous.text = names[count-1];
+            }
+
+            Active.text = "Grab" + names[count];
+            nxt.text = names[count + 1];
 
         }
         Invoke("enable_previous_button", 2f);
     }
     public void enable_previous_button() {
-        Previous.interactable = true;
+        Previousbtn.interactable = true;
     }
 }

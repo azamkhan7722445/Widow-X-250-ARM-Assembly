@@ -1297,6 +1297,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &3916508480190183492
 MonoBehaviour:
@@ -4122,6 +4123,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &3869146294806193887
 MonoBehaviour:
@@ -4541,6 +4543,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &8524770001537640387
 MonoBehaviour:
@@ -5731,6 +5734,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &914718031807352839
 MonoBehaviour:
@@ -8601,6 +8605,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &3506536323454145815
 MonoBehaviour:
@@ -11718,6 +11723,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &4501833081285560451
 MonoBehaviour:
@@ -14261,6 +14267,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &634292510464512810
 MonoBehaviour:
@@ -14515,6 +14522,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &2632745927518050872
 MonoBehaviour:
@@ -17417,6 +17425,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &6831739091573500008
 MonoBehaviour:
@@ -18482,6 +18491,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &3743272636656900684
 MonoBehaviour:
@@ -19683,10 +19693,33 @@ MonoBehaviour:
   - {fileID: 3738698501893478028}
   - {fileID: 3204969584196542215}
   - {fileID: 7828055745728611183}
-  Next: {fileID: 0}
-  Previous: {fileID: 0}
+  Nextbtn: {fileID: 0}
+  Previousbtn: {fileID: 0}
   _count: 0
   Acctive_count: []
+  names:
+  - First_MAIN-SCREW
+  - Second_MAIN-SCREW
+  - GRAPPER
+  - First_S_SHAPE-SCREW
+  - Second_S_SHAPE-SCREW
+  - S_SHAPE
+  - SARWO_HORN_SCREW
+  - Sarvo_Horn_Defected
+  - Sarvo_Horn_Non_Defected
+  postion:
+  - {fileID: 2256592699203503373}
+  - {fileID: 305855253412436892}
+  - {fileID: 8028573571490547306}
+  - {fileID: 3206157394227425521}
+  - {fileID: 1675644012662035003}
+  - {fileID: 3730301973094090600}
+  - {fileID: 7519847496576354588}
+  - {fileID: 1026422248703105048}
+  magnet: []
+  nxt: {fileID: 1525799128261749334}
+  previous: {fileID: 3028319839007949637}
+  Active: {fileID: 2911106271559186883}
 --- !u!114 &3454378560871840585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20273,6 +20306,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &1689366048649968542
 MonoBehaviour:
@@ -21331,6 +21365,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &6919785493864026008
 MonoBehaviour:
@@ -23941,6 +23976,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &5762264646410579676
 MonoBehaviour:
@@ -25357,6 +25393,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &8835954629038256719
 MonoBehaviour:
@@ -26078,6 +26115,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &2342116528233452045
 MonoBehaviour:
@@ -30306,6 +30344,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &6946202048806184661
 MonoBehaviour:
@@ -31244,6 +31283,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &646584431922486485
 MonoBehaviour:
@@ -35129,6 +35169,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &1768646658764916040
 MonoBehaviour:
@@ -37039,6 +37080,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &5139722280813079479
 MonoBehaviour:
@@ -46129,6 +46171,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &5976885289148631290
 MonoBehaviour:
@@ -52282,6 +52325,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &2593748135482454060
 MonoBehaviour:
@@ -62357,6 +62401,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &8096951377819820796
 MonoBehaviour:
@@ -69678,6 +69723,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &7018517301151249264
 MonoBehaviour:
@@ -70997,6 +71043,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &2523560463193030563
 MonoBehaviour:
@@ -72273,6 +72320,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &6363175754778530512
 MonoBehaviour:
@@ -72660,6 +72708,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &3652896444057064419
 MonoBehaviour:
@@ -74964,6 +75013,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 1
+  check_attched: 0
   dis: 0
 --- !u!114 &6790035838990248849
 MonoBehaviour:
@@ -76044,6 +76094,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &4304384047279305192
 MonoBehaviour:
@@ -78578,6 +78629,7 @@ MonoBehaviour:
   unattachCriteria: 1
   unattachDistance: 0.03
   IsNonGrabbable: 0
+  check_attched: 0
   dis: 0
 --- !u!114 &924431780722633974
 MonoBehaviour:
