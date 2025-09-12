@@ -166,5 +166,15 @@ namespace Fusion.Addons.StructureCohesion
 
             Debug.Log($"{gameObject.name} grabbed normally.");
         }
+
+
+        public void on_attch()
+        {
+            check_attched = true;
+        }
+        public void of_attch()
+        {
+            check_attched = false;
+        }
     }
 }

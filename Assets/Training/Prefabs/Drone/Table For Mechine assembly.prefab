@@ -4490,7 +4490,7 @@ Transform:
   m_GameObject: {fileID: 559368638280719727}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.008, z: 0}
+  m_LocalPosition: {x: 0, y: -0.008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4529,10 +4529,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8085629749248137766}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8085629749248137766}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -8591,10 +8617,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7102718649211075205}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7102718649211075205}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -11710,9 +11762,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 9158473760978845697}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9158473760978845697}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -17411,10 +17489,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2242623208908365958}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2242623208908365958}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -19716,10 +19820,21 @@ MonoBehaviour:
   - {fileID: 3730301973094090600}
   - {fileID: 7519847496576354588}
   - {fileID: 1026422248703105048}
-  magnet: []
+  magnet:
+  - {fileID: 1814489593633987154}
+  - {fileID: 8085629749248137766}
+  - {fileID: 9158473760978845697}
+  - {fileID: 2915251565484281435}
+  - {fileID: 1141792075195004977}
+  - {fileID: 7102718649211075205}
+  - {fileID: 2242623208908365958}
+  - {fileID: 4061727827219723075}
+  - {fileID: 4061727827219723075}
+  extra_mag: {fileID: 5223378531518649587}
   nxt: {fileID: 1525799128261749334}
   previous: {fileID: 3028319839007949637}
   Active: {fileID: 2911106271559186883}
+  Alert: {fileID: 5480448998743100931}
 --- !u!114 &3454378560871840585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20292,10 +20407,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6213123117270716713}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6213123117270716713}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -23584,6 +23725,7 @@ RectTransform:
   - {fileID: 8333828326964562331}
   - {fileID: 5181644877341119230}
   - {fileID: 5475715261137782869}
+  - {fileID: 2212634733446228842}
   - {fileID: 7276585743855658402}
   - {fileID: 1714798546805667827}
   - {fileID: 719373404351438383}
@@ -24927,8 +25069,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279769307
-  m_fontColor: {r: 0.8584906, g: 0.09313814, b: 0.09313814, a: 1}
+    rgba: 4292548633
+  m_fontColor: {r: 0.09685209, g: 0.09411765, b: 0.85882354, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26101,10 +26243,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2915251565484281435}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2915251565484281435}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -30942,7 +31110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1227881583783249925
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35156,9 +35324,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5223378531518649587}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5223378531518649587}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -37066,10 +37260,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1141792075195004977}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1141792075195004977}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -58234,6 +58454,142 @@ Transform:
   - {fileID: 4504732477032019778}
   m_Father: {fileID: 1684418557206774337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6947693031798388396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2212634733446228842}
+  - component: {fileID: 1243837202490606090}
+  - component: {fileID: 5480448998743100931}
+  m_Layer: 5
+  m_Name: Active (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2212634733446228842
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947693031798388396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8792369965774107436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 219, y: -107}
+  m_SizeDelta: {x: 106.5, y: 166}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1243837202490606090
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947693031798388396}
+  m_CullTransparentMesh: 0
+--- !u!114 &5480448998743100931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947693031798388396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: First Use This
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 551d66d1ef951614b908e8103b986ec4, type: 2}
+  m_sharedMaterial: {fileID: -3461725706462711650, guid: 551d66d1ef951614b908e8103b986ec4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281282989
+  m_fontColor: {r: 0.6792453, g: 0.19261009, b: 0.18262726, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16.9
+  m_fontSizeBase: 16.9
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6947863579764733925
 GameObject:
   m_ObjectHideFlags: 0
@@ -72306,14 +72662,28 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1814489593633987154}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8032532522625444653}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1814489593633987154}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -78627,10 +78997,36 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4061727827219723075}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: on_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4061727827219723075}
+        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
+          Assembly-CSharp
+        m_MethodName: of_attch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -79062,6 +79458,10 @@ PrefabInstance:
     - target: {fileID: 7523368956523962233, guid: 32043519eaf1cf84ebe2b55b4323a0dc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523368956523962234, guid: 32043519eaf1cf84ebe2b55b4323a0dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7523368956523962235, guid: 32043519eaf1cf84ebe2b55b4323a0dc, type: 3}
       propertyPath: m_AnchorMax.y
