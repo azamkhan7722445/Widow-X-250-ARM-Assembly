@@ -2770,7 +2770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Attach: 0
+  _Attach: 1
 --- !u!1 &350567860301675605
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,10 +4543,34 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 73971463742560755}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 73971463742560755}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -6175,6 +6199,7 @@ GameObject:
   - component: {fileID: 2879219699674767533}
   - component: {fileID: 3780063855126614226}
   - component: {fileID: 9097060747802556783}
+  - component: {fileID: 6489386263281268585}
   m_Layer: 0
   m_Name: step7 NetworkGrabbable Variant With Magnet Propeller_Cap-SARWO_HORN_SCREW
   m_TagString: Untagged
@@ -6380,6 +6405,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &6489386263281268585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753980952839257201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &761055093086344035
 GameObject:
   m_ObjectHideFlags: 0
@@ -8605,10 +8643,34 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4809220484418847462}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4809220484418847462}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -11724,9 +11786,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6817220272068114279}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6817220272068114279}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -17425,10 +17511,34 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6489386263281268585}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6489386263281268585}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -19731,14 +19841,15 @@ MonoBehaviour:
   - {fileID: 7519847496576354588}
   - {fileID: 1026422248703105048}
   magnet:
-  - {fileID: 1814489593633987154}
-  - {fileID: 8085629749248137766}
-  - {fileID: 9158473760978845697}
-  - {fileID: 2915251565484281435}
-  - {fileID: 1141792075195004977}
-  - {fileID: 7102718649211075205}
-  - {fileID: 2242623208908365958}
-  - {fileID: 4061727827219723075}
+  - {fileID: 3121837563811280291}
+  - {fileID: 73971463742560755}
+  - {fileID: 6817220272068114279}
+  - {fileID: 632167218644599478}
+  - {fileID: 6782940951014369645}
+  - {fileID: 4809220484418847462}
+  - {fileID: 6489386263281268585}
+  - {fileID: 9211549946859212155}
+  - {fileID: 115574023761079633}
   extra_mag: {fileID: 5223378531518649587}
   nxt: {fileID: 1525799128261749334}
   previous: {fileID: 3028319839007949637}
@@ -20317,10 +20428,9 @@ MonoBehaviour:
   onRegisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6213123117270716713}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
+      - m_Target: {fileID: 115574023761079633}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20333,10 +20443,9 @@ MonoBehaviour:
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6213123117270716713}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
+      - m_Target: {fileID: 115574023761079633}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26152,10 +26261,34 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 632167218644599478}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 632167218644599478}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
@@ -37144,10 +37277,9 @@ MonoBehaviour:
   onRegisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1141792075195004977}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
+      - m_Target: {fileID: 6782940951014369645}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37160,10 +37292,9 @@ MonoBehaviour:
   onUnregisterAttachment:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1141792075195004977}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
+      - m_Target: {fileID: 6782940951014369645}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38778,6 +38909,7 @@ GameObject:
   - component: {fileID: 7617034806076919527}
   - component: {fileID: 233943518010911578}
   - component: {fileID: 2330719197808522585}
+  - component: {fileID: 73971463742560755}
   m_Layer: 0
   m_Name: step1 NetworkGrabbable Variant With Magnet Propeller_Cap_MAIN-SCREW (1)
   m_TagString: Untagged
@@ -38983,6 +39115,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &73971463742560755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742402488832482143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &4778417602109441368
 GameObject:
   m_ObjectHideFlags: 0
@@ -54803,6 +54948,7 @@ GameObject:
   - component: {fileID: 830959317505806686}
   - component: {fileID: 2389067007968614645}
   - component: {fileID: 8690037801295675386}
+  - component: {fileID: 572391976583215848}
   m_Layer: 0
   m_Name: step9 NetworkGrabbable Variant With Magnet Propeller_Bolt-Rubber_washer
   m_TagString: Untagged
@@ -55010,6 +55156,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &572391976583215848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569208341674172781}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &6572164252942621010
 GameObject:
   m_ObjectHideFlags: 0
@@ -59725,6 +59884,7 @@ GameObject:
   - component: {fileID: 1997841800311572774}
   - component: {fileID: 7616689861471322756}
   - component: {fileID: 2353538879080589486}
+  - component: {fileID: 115574023761079633}
   m_Layer: 0
   m_Name: NetworkGrabbable Variant With Magnet Propeller_Bolt-Sarvo_Horn_Defected
     (1)
@@ -59933,6 +60093,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &115574023761079633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096776009713071637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &7100242382986500365
 GameObject:
   m_ObjectHideFlags: 0
@@ -64006,6 +64179,7 @@ GameObject:
   - component: {fileID: 5953296465895481519}
   - component: {fileID: 4483470457039905373}
   - component: {fileID: 8120185034766773093}
+  - component: {fileID: 9211549946859212155}
   m_Layer: 0
   m_Name: step8 NetworkGrabbable Variant With Magnet Propeller_Bolt-Sarvo_Horn_Defected
   m_TagString: Untagged
@@ -64213,6 +64387,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &9211549946859212155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631887708694193030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &7638461417258523148
 GameObject:
   m_ObjectHideFlags: 0
@@ -66144,6 +66331,7 @@ GameObject:
   - component: {fileID: 2277853968925773985}
   - component: {fileID: 4698636380608951917}
   - component: {fileID: 3569959590596200477}
+  - component: {fileID: 632167218644599478}
   m_Layer: 0
   m_Name: step4 NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW
   m_TagString: Untagged
@@ -66349,6 +66537,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &632167218644599478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867265401868729635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &7883936640439972172
 GameObject:
   m_ObjectHideFlags: 0
@@ -68145,7 +68346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Attach: 0
+  _Attach: 1
 --- !u!1 &8042006956141595001
 GameObject:
   m_ObjectHideFlags: 0
@@ -74169,6 +74370,7 @@ GameObject:
   - component: {fileID: 5513259018783893447}
   - component: {fileID: 832695584569305740}
   - component: {fileID: 4045188178952853227}
+  - component: {fileID: 4809220484418847462}
   m_Layer: 0
   m_Name: step6 NetworkGrabbable Variant With Magnet Propeller_Bolt-S_SHAPE
   m_TagString: Untagged
@@ -74376,6 +74578,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &4809220484418847462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8732153997410640549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &8736691901522642165
 GameObject:
   m_ObjectHideFlags: 0
@@ -75684,6 +75899,7 @@ GameObject:
   - component: {fileID: 7832434980806477571}
   - component: {fileID: 8285079698746397461}
   - component: {fileID: 317856669507151653}
+  - component: {fileID: 6782940951014369645}
   m_Layer: 0
   m_Name: step5 NetworkGrabbable Variant With Magnet Propeller_Cap_S_SHAPE-SCREW
     (1)
@@ -75890,6 +76106,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerPrefab: {fileID: 0}
+--- !u!114 &6782940951014369645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8892444904839214840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75a3245f3f297419ba4ba6919d81da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Attach: 1
 --- !u!1 &8899394835449434875
 GameObject:
   m_ObjectHideFlags: 0
@@ -78892,10 +79121,34 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9211549946859212155}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_On_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9211549946859212155}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
