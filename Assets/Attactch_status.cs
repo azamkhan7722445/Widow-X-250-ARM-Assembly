@@ -4,6 +4,8 @@ using UnityEngine;
 public class Attactch_status : NetworkBehaviour
 {
     [Networked] public bool Attach { get; set; }
+
+    [Networked] public bool Attach2 { get; set; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,5 +28,18 @@ public class Attactch_status : NetworkBehaviour
     public void RPC_off_Attache()
     {
         Attach = false;
+    }
+
+
+
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RPC__Attache()
+    {
+        if (!Attach2)
+        {
+            Attach = false;
+            Attach2 = true;
+        }
+       
     }
 }
