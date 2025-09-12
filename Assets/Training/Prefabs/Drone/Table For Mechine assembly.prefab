@@ -4576,7 +4576,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 73971463742560755}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -8676,7 +8688,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4809220484418847462}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -11818,7 +11842,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6817220272068114279}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -17544,7 +17580,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6489386263281268585}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -20460,7 +20508,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115574023761079633}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -26294,7 +26354,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 632167218644599478}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -35374,7 +35446,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6817220272068114279}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -37309,7 +37393,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6782940951014369645}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -72793,7 +72889,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3121837563811280291}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
@@ -79154,7 +79262,19 @@ MonoBehaviour:
       m_Calls: []
   onUnregisterReverseAttachment:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9211549946859212155}
+        m_TargetAssemblyTypeName: Attactch_status, Assembly-CSharp
+        m_MethodName: RPC_off_Attache
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   requestedNewAttachedToPoint: {fileID: 0}
   unattachCriteria: 1
   unattachDistance: 0.03
