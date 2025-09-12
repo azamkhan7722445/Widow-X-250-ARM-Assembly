@@ -55,7 +55,7 @@ public class ObjectReset : NetworkBehaviour {
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void RPC_Reset_Next()
     {
-        if (magnet[count].check_attched || magnet[2].check_attched)
+        //if (magnet[count].check_attched || magnet[2].check_attched)
         {
             if (parts.Count - 1 > count)
             {
@@ -89,11 +89,11 @@ public class ObjectReset : NetworkBehaviour {
                 previous.text = names[count - 1];
             }
         }
-        else
+        /*else
         {
             Alert.gameObject.SetActive(true);
             Invoke("off_alert", 2f);
-        }
+        }*/
 
         Invoke("enable_next_button", 2f);
     }
@@ -107,7 +107,7 @@ public class ObjectReset : NetworkBehaviour {
     public void RPC_Reset_previous()
     {
 
-        if (!magnet[count].check_attched || !magnet[2].check_attched)
+        //if (!magnet[count].check_attched || !magnet[2].check_attched)
         {
             if (!Nextbtn.gameObject.activeSelf)
             {
@@ -148,11 +148,11 @@ public class ObjectReset : NetworkBehaviour {
 
             }
         }
-        else
+       /* else
         {
             Alert.gameObject.SetActive(true);
             Invoke("off_alert", 2f);
-        }
+        }*/
         Invoke("enable_previous_button", 2f);
     }
 

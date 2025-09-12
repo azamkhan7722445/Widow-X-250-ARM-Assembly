@@ -19797,8 +19797,8 @@ MonoBehaviour:
   - {fileID: 3738698501893478028}
   - {fileID: 3204969584196542215}
   - {fileID: 7828055745728611183}
-  Nextbtn: {fileID: 0}
-  Previousbtn: {fileID: 0}
+  Nextbtn: {fileID: 7276585742534950265}
+  Previousbtn: {fileID: 2961845874987267478}
   _count: 0
   Acctive_count: []
   names:
@@ -78997,36 +78997,10 @@ MonoBehaviour:
   requestedNewAttachedPoint: {fileID: 0}
   onRegisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4061727827219723075}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: on_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnregisterAttachment:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4061727827219723075}
-        m_TargetAssemblyTypeName: Fusion.Addons.StructureCohesion.MagnetStructureAttachmentPoint,
-          Assembly-CSharp
-        m_MethodName: of_attch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRegisterReverseAttachment:
     m_PersistentCalls:
       m_Calls: []
