@@ -6,6 +6,8 @@ using Fusion.XR.Shared.Grabbing;
 using UnityEngine.UI;
 using TMPro;
 using Fusion.Addons.StructureCohesion;
+using Unity.Mathematics;
+using UnityEngine.SceneManagement;
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
     public Transform target;   // jis object ko reset karna hai
@@ -22,6 +24,11 @@ public class ObjectReset : NetworkBehaviour {
     public List<Attactch_status> magnet = new List<Attactch_status>();
     public MagnetStructureAttachmentPoint extra_mag;
     public TextMeshProUGUI nxt, previous, Active,Alert;
+
+    public NetworkGrabbable defectet, undefected;
+
+    [Networked] public bool assembling { get; set; }
+    [Networked] public bool deassembling { get; set; }
     void Start() {
         if (target != null) {
             startPos = target.position;
@@ -68,20 +75,32 @@ public class ObjectReset : NetworkBehaviour {
                 }
                 parts[count].enabled = false;
                 parts[count].gameObject.transform.position = postion[count].position;
-                parts[count].gameObject.transform.rotation = postion[count].rotation;
+                parts[count].gameObject.transform.rotation = quaternion.Euler(Vector3.zero);
               
                 count++;
                 parts[count].enabled = true;
+
+                if (assembling&&count==7)
+                {
+                    parts[count].enabled = false;
+                    parts[count-1].enabled = true;
+                }
                 if (count < 7)
                 {
                     nxt.text = names[count + 1];
                 }
+
                 else
                 {
                     nxt.text = "";
                 }
                 if (count == 8)
                 {
+                    if (!assembling)
+                    {
+                        assembling=true;
+                    }
+                    
                     Nextbtn.gameObject.SetActive(false);
                 }
 
@@ -126,6 +145,7 @@ public class ObjectReset : NetworkBehaviour {
 
                 if (count == 7)
                 {
+                    parts[count].enabled = false;
                     count--;
                     parts[count].enabled = true;
                 }
@@ -157,6 +177,26 @@ public class ObjectReset : NetworkBehaviour {
     }
 
 
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_Reset()
+    {
+
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        // Reload it
+        SceneManager.LoadScene(currentScene);
+
+
+        //if (Runner.IsServer) // Host only
+        //{
+        //    Get current scene name
+        //    string sceneName = SceneManager.GetActiveScene().name;
+
+        //    Reload the scene(all clients will follow automatically)
+        //    Runner.SetActiveScene(sceneName);
+        //}
+    }
+
     public void off_alert()
     {
       Alert.gameObject.SetActive(false);
@@ -164,4 +204,7 @@ public class ObjectReset : NetworkBehaviour {
     public void enable_previous_button() {
         Previousbtn.interactable = true;
     }
+
+
+
 }
