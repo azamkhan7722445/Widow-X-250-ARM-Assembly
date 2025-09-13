@@ -2784,6 +2784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &350567860301675605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6456,6 +6457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &761055093086344035
 GameObject:
   m_ObjectHideFlags: 0
@@ -31461,7 +31463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 109, y: -214}
+  m_AnchoredPosition: {x: 91, y: -214}
   m_SizeDelta: {x: 110, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &668392407787306024
@@ -39481,6 +39483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &4778417602109441368
 GameObject:
   m_ObjectHideFlags: 0
@@ -55523,6 +55526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &6572164252942621010
 GameObject:
   m_ObjectHideFlags: 0
@@ -60473,6 +60477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &7100242382986500365
 GameObject:
   m_ObjectHideFlags: 0
@@ -64780,6 +64785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &7638461417258523148
 GameObject:
   m_ObjectHideFlags: 0
@@ -66943,6 +66949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &7883936640439972172
 GameObject:
   m_ObjectHideFlags: 0
@@ -68753,6 +68760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &8042006956141595001
 GameObject:
   m_ObjectHideFlags: 0
@@ -75022,6 +75030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &8736691901522642165
 GameObject:
   m_ObjectHideFlags: 0
@@ -76563,6 +76572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Attach: 1
   _Attach2: 0
+  target: {fileID: 0}
 --- !u!1 &8899394835449434875
 GameObject:
   m_ObjectHideFlags: 0
