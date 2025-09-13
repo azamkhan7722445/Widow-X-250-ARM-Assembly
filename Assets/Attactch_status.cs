@@ -6,10 +6,19 @@ public class Attactch_status : NetworkBehaviour
     [Networked] public bool Attach { get; set; }
 
     [Networked] public bool Attach2 { get; set; }
+
+    public Transform target;
+    private Vector3 startPos;
+    private Quaternion startRot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        target = transform;
+        if (target != null)
+        {
+            startPos = target.position;
+            startRot = target.rotation;
+        }
     }
 
     // Update is called once per frame
@@ -41,5 +50,27 @@ public class Attactch_status : NetworkBehaviour
             Attach2 = true;
         }
        
+    }
+
+
+
+    public void ResetObject()
+    {
+        if (Object.HasStateAuthority) // sirf host/server trigger kare
+        {
+            RPC_ResetObject();
+        }
+    }
+
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    private void RPC_ResetObject()
+    {
+        if (target != null)
+        {
+            target.position = startPos;
+            target.rotation = startRot;
+        }
+
+        Debug.Log("Object reset to its initial position & rotation.");
     }
 }

@@ -180,13 +180,19 @@ public class ObjectReset : NetworkBehaviour {
     [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_Reset()
     {
+        foreach (var item in magnet)
+        {
+            if (item != null && item.gameObject != null)
+            {
+                item.ResetObject();
+            }
+        }
 
-        string currentScene = SceneManager.GetActiveScene().name;
-
-        // Reload it
-        SceneManager.LoadScene(currentScene);
-
-
+        nxt.text = "Second_MAIN-SCREW";
+        Active.text = "Grab First_MAIN-SCREW";
+        previous.text = "";
+        count = 0;
+        Previousbtn.gameObject.SetActive(false);
         //if (Runner.IsServer) // Host only
         //{
         //    Get current scene name
