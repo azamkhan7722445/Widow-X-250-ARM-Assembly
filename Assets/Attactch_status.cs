@@ -26,14 +26,14 @@ public class Attactch_status : NetworkBehaviour
     {
         
     }
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_On_Attache()
     {
       Attach = true;
     }
 
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_off_Attache()
     {
         Attach = false;
@@ -41,7 +41,7 @@ public class Attactch_status : NetworkBehaviour
 
 
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC__Attache()
     {
         if (!Attach2)
@@ -62,7 +62,7 @@ public class Attactch_status : NetworkBehaviour
         }
     }
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     private void RPC_ResetObject()
     {
         if (target != null)

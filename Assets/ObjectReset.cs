@@ -42,13 +42,13 @@ public class ObjectReset : NetworkBehaviour {
 
     // ye function call karo jab reset karna ho
     public void ResetObject() {
-        if (Object.HasStateAuthority) // sirf host/server trigger kare
+       // if (Object.HasStateAuthority) // sirf host/server trigger kare
         {
             RPC_ResetObject();
         }
     }
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     private void RPC_ResetObject() {
         if (target != null) {
             target.position = startPos;
@@ -59,7 +59,7 @@ public class ObjectReset : NetworkBehaviour {
     }
 
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_Reset_Next()
     {
         if (!magnet[count].Attach)
@@ -76,7 +76,11 @@ public class ObjectReset : NetworkBehaviour {
                 parts[count].enabled = false;
 
                 ResetObject1();
-                count++;
+                if (Object.HasStateAuthority) // sirf host/server trigger kare
+                {
+                    count++;
+                }
+               // count++;
                 parts[count].enabled = true;
 
                 if (assembling&&count==7)
@@ -121,7 +125,7 @@ public class ObjectReset : NetworkBehaviour {
     public void enable_next_button() {
         Nextbtn.interactable = true;
     }
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
     public void RPC_Reset_previous()
     {
 
@@ -140,12 +144,18 @@ public class ObjectReset : NetworkBehaviour {
 
 
                 parts[count].enabled = false;
-                count--;
+                if (Object.HasStateAuthority) // sirf host/server trigger kare
+                {
+                    count--;
+                }
 
                 if (count == 7)
                 {
                     parts[count].enabled = false;
-                    count--;
+                    if (Object.HasStateAuthority) // sirf host/server trigger kare
+                    {
+                        count--;
+                    }
                     parts[count].enabled = true;
                 }
                 else
@@ -232,7 +242,7 @@ public class ObjectReset : NetworkBehaviour {
         }
     }
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     private void RPC_ResetObject1()
     {
         parts[count].gameObject.transform.position = postion[count].position;
