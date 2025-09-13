@@ -200,7 +200,7 @@ public class ObjectReset : NetworkBehaviour {
                 parts[0].enabled = true;
             }
             else {
-                parts[i].enabled = true;
+                parts[i].enabled = false;
 
             }
         }
