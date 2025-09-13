@@ -74,9 +74,8 @@ public class ObjectReset : NetworkBehaviour {
 
                 }
                 parts[count].enabled = false;
-                parts[count].gameObject.transform.position = postion[count].position;
-                parts[count].gameObject.transform.rotation = quaternion.Euler(Vector3.zero);
-              
+
+                ResetObject1();
                 count++;
                 parts[count].enabled = true;
 
@@ -193,6 +192,20 @@ public class ObjectReset : NetworkBehaviour {
         previous.text = "";
         count = 0;
         Previousbtn.gameObject.SetActive(false);
+        for(int i = 0; i <= 8; i++)
+        {
+
+            if (i == 0)
+            {
+                parts[0].enabled = true;
+            }
+            else {
+                parts[i].enabled = true;
+
+            }
+        }
+
+
         //if (Runner.IsServer) // Host only
         //{
         //    Get current scene name
@@ -211,6 +224,19 @@ public class ObjectReset : NetworkBehaviour {
         Previousbtn.interactable = true;
     }
 
+    public void ResetObject1()
+    {
+        if (Object.HasStateAuthority) // sirf host/server trigger kare
+        {
+            RPC_ResetObject1();
+        }
+    }
 
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    private void RPC_ResetObject1()
+    {
+        parts[count].gameObject.transform.position = postion[count].position;
+        parts[count].gameObject.transform.rotation = quaternion.Euler(Vector3.zero);
+    }
 
 }
