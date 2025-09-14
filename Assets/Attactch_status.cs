@@ -56,7 +56,7 @@ public class Attactch_status : NetworkBehaviour
 
     public void ResetObject()
     {
-        if (Object.HasStateAuthority) // sirf host/server trigger kare
+       // if (Object.HasStateAuthority) // sirf host/server trigger kare
         {
             RPC_ResetObject();
         }

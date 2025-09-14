@@ -4337,6 +4337,7 @@ GameObject:
   - component: {fileID: 1497539507605004684}
   - component: {fileID: 5195376198866620645}
   - component: {fileID: 6673362343608031214}
+  - component: {fileID: 6291627573718732691}
   m_Layer: 0
   m_Name: Propeller_Cap
   m_TagString: sarwo_screw
@@ -4429,7 +4430,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -4455,6 +4456,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.003248552
   m_Center: {x: -0.0000067210553, y: -0.000007677454, z: 0.0035}
+--- !u!136 &6291627573718732691
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551147283037349663}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0042789634
+  m_Height: 0.009549257
+  m_Direction: 2
+  m_Center: {x: -0.00070627854, y: -0.0006885941, z: 0.005663178}
 --- !u!1 &551272816927736461
 GameObject:
   m_ObjectHideFlags: 0
@@ -10783,7 +10807,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.042182155, y: 0.010717769, z: 0.0732224}
   m_Center: {x: -0.3305957, y: 0.035179783, z: -0.4222105}
@@ -15399,6 +15423,7 @@ GameObject:
   - component: {fileID: 3861659030875533086}
   - component: {fileID: 9091991063733069316}
   - component: {fileID: 5958444648046528854}
+  - component: {fileID: 1225149095281274926}
   m_Layer: 0
   m_Name: S_Shape
   m_TagString: s_shape
@@ -15474,6 +15499,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1225149095281274926
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760560055782084474}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5517190158866172375, guid: 28c58e2906533244eaf560362a5dc697, type: 3}
 --- !u!1 &1769886350415622288
 GameObject:
   m_ObjectHideFlags: 0
@@ -24133,6 +24180,7 @@ GameObject:
   - component: {fileID: 8030294087216304410}
   - component: {fileID: 8849398661898708586}
   - component: {fileID: 3988825734279217790}
+  - component: {fileID: 7123699508278432515}
   m_Layer: 0
   m_Name: Propeller_Cap
   m_TagString: s_shape_screw
@@ -24225,7 +24273,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -24251,6 +24299,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.003
   m_Center: {x: -0.0000067210553, y: -0.000007677367, z: 0.002}
+--- !u!136 &7123699508278432515
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869402200274318451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0042789634
+  m_Height: 0.009549257
+  m_Direction: 2
+  m_Center: {x: -0.00070627854, y: -0.0006885941, z: 0.005663178}
 --- !u!1 &2884919863217607097
 GameObject:
   m_ObjectHideFlags: 0
@@ -33179,7 +33250,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.003
   m_Center: {x: -0.0000067210553, y: -0.000007677367, z: 0.002}
@@ -41345,7 +41416,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.003248552
   m_Center: {x: -0.0000067210553, y: -0.000007677454, z: 0.0035}
@@ -45847,6 +45918,7 @@ GameObject:
   - component: {fileID: 8908178455566740888}
   - component: {fileID: 9116669485858468909}
   - component: {fileID: 4214249633550378979}
+  - component: {fileID: 8860330901741696525}
   m_Layer: 0
   m_Name: Propeller_Cap
   m_TagString: s_shape_screw
@@ -45939,7 +46011,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -45965,6 +46037,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.003
   m_Center: {x: -0.0000067210553, y: -0.000007677367, z: 0.002}
+--- !u!136 &8860330901741696525
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445783263516529475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0042789634
+  m_Height: 0.009549257
+  m_Direction: 2
+  m_Center: {x: -0.00070627854, y: -0.0006885941, z: 0.005663178}
 --- !u!1 &5446028104210585551
 GameObject:
   m_ObjectHideFlags: 0
@@ -46064,6 +46159,7 @@ GameObject:
   - component: {fileID: 5806852301714032114}
   - component: {fileID: 7544467299550146430}
   - component: {fileID: 3741717769887711393}
+  - component: {fileID: 5011035056251760064}
   m_Layer: 0
   m_Name: Propeller_Cap
   m_TagString: main_screw
@@ -46156,7 +46252,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -46182,6 +46278,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.0045
   m_Center: {x: -0.0000067210553, y: -0.000007677015, z: -0.0035}
+--- !u!136 &5011035056251760064
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446797085225296935}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.004278964
+  m_Height: 0.013315121
+  m_Direction: 2
+  m_Center: {x: -0.0007062785, y: -0.00068859087, z: -0.008110785}
 --- !u!1 &5452878316409969631
 GameObject:
   m_ObjectHideFlags: 0
@@ -49151,6 +49270,7 @@ GameObject:
   - component: {fileID: 8637168635217247021}
   - component: {fileID: 3658999894814524775}
   - component: {fileID: 5443278672994870876}
+  - component: {fileID: 1237315326814429552}
   m_Layer: 0
   m_Name: Propeller_Cap
   m_TagString: main_screw
@@ -49243,7 +49363,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -49269,6 +49389,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.0045
   m_Center: {x: -0.0000067210553, y: -0.000007677015, z: -0.0035}
+--- !u!136 &1237315326814429552
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777860244271792624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.004278964
+  m_Height: 0.013315121
+  m_Direction: 2
+  m_Center: {x: -0.0007062785, y: -0.00068859087, z: -0.008110785}
 --- !u!1 &5780975516306326771
 GameObject:
   m_ObjectHideFlags: 0
@@ -55059,7 +55202,6 @@ GameObject:
   - component: {fileID: 6480741814724393743}
   - component: {fileID: 7534703336442976949}
   - component: {fileID: 5208555910070172292}
-  - component: {fileID: 7036154739680147463}
   m_Layer: 0
   m_Name: colider
   m_TagString: main_screw
@@ -55157,27 +55299,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5799905386140310142, guid: 28c58e2906533244eaf560362a5dc697, type: 3}
---- !u!135 &7036154739680147463
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537996429457445041}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.0045
-  m_Center: {x: -0.0000067210553, y: -0.000007677015, z: -0.0035}
 --- !u!1 &6545431779260803961
 GameObject:
   m_ObjectHideFlags: 0
@@ -59613,7 +59734,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6104137750336044842}
-  - component: {fileID: 2164746493057841679}
   m_Layer: 0
   m_Name: collider
   m_TagString: s_shape_screw
@@ -59636,27 +59756,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3415468791551647728}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -180}
---- !u!135 &2164746493057841679
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7031351666698070786}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.003
-  m_Center: {x: -0.0000067210553, y: -0.000007677367, z: 0.002}
 --- !u!1 &7043399499463696957
 GameObject:
   m_ObjectHideFlags: 0
@@ -69341,7 +69440,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.0045
   m_Center: {x: -0.0000067210553, y: -0.000007677015, z: -0.0035}

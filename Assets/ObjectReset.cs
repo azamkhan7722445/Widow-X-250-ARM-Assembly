@@ -8,7 +8,7 @@ using TMPro;
 using Fusion.Addons.StructureCohesion;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
     public Transform target;   // jis object ko reset karna hai
@@ -83,34 +83,7 @@ public class ObjectReset : NetworkBehaviour {
                     RPC_sett_count(count);
                 }
                // count++;
-                parts[count].enabled = true;
-
-                if (assembling&&count==7)
-                {
-                    parts[count].enabled = false;
-                    parts[count-1].enabled = true;
-                }
-                if (count < 7)
-                {
-                    nxt.text = names[count + 1];
-                }
-
-                else
-                {
-                    nxt.text = "";
-                }
-                if (count == 8)
-                {
-                    if (!assembling)
-                    {
-                        assembling=true;
-                    }
-                    
-                    Nextbtn.gameObject.SetActive(false);
-                }
-
-                Active.text = "Grab" + names[count];
-                previous.text = names[count - 1];
+               
             }
         }
         else
@@ -146,38 +119,15 @@ public class ObjectReset : NetworkBehaviour {
 
 
                 parts[count].enabled = false;
+
+
                 if (Object.HasStateAuthority) // sirf host/server trigger kare
                 {
                     count--;
-                    RPC_sett_count(count);
+                    RPC_sett_count1(count);
                 }
 
-                if (count == 7)
-                {
-                    parts[count].enabled = false;
-                    if (Object.HasStateAuthority) // sirf host/server trigger kare
-                    {
-                        count--;
-                        RPC_sett_count(count);
-                    }
-                    parts[count].enabled = true;
-                }
-                else
-                {
-                    parts[count].enabled = true;
-                }
-                if (count == 0)
-                {
-                    previous.text = names[count];
-                    Previousbtn.gameObject.SetActive(false);
-                }
-                else
-                {
-                    previous.text = names[count - 1];
-                }
-
-                Active.text = "Grab" + names[count];
-                nxt.text = names[count + 1];
+                
 
             }
         }
@@ -188,10 +138,85 @@ public class ObjectReset : NetworkBehaviour {
         }
         Invoke("enable_previous_button", 2f);
     }
+
+
     [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_sett_count1(int count1)
+    {
+
+        count = count1;
+        if (count == 7)
+        {
+            parts[count].enabled = false;
+            if (Object.HasStateAuthority) // sirf host/server trigger kare
+            {
+                count--;
+                RPC_sett_count2(count);
+            }
+           
+        }
+        else
+        {
+            parts[count].enabled = true;
+        }
+        if (count == 0)
+        {
+            previous.text = names[count];
+            Previousbtn.gameObject.SetActive(false);
+        }
+        else
+        {
+            previous.text = names[count - 1];
+        }
+
+        Active.text = "Grab" + names[count];
+        nxt.text = names[count + 1];
+
+    }
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_sett_count2(int count1)
+    {
+
+        count = count1;
+        parts[count].enabled = true;
+
+    }
+
+        [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_sett_count(int count1)
     {
         count = count1;
+        parts[count].enabled = true;
+
+        if (assembling && count == 7)
+        {
+            parts[count].enabled = false;
+            parts[count - 1].enabled = true;
+        }
+        if (count < 7)
+        {
+            nxt.text = names[count + 1];
+        }
+
+        else
+        {
+            nxt.text = "";
+        }
+        if (count == 8)
+        {
+            if (!assembling)
+            {
+                assembling = true;
+            }
+
+            Nextbtn.gameObject.SetActive(false);
+        }
+
+        Active.text = "Grab" + names[count];
+        previous.text = names[count - 1];
+
+
+
     }
 
         [Rpc(RpcSources.All, RpcTargets.All)]
