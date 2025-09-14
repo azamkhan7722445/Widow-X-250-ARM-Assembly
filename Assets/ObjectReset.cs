@@ -8,6 +8,7 @@ using TMPro;
 using Fusion.Addons.StructureCohesion;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
     public Transform target;   // jis object ko reset karna hai
@@ -16,7 +17,7 @@ public class ObjectReset : NetworkBehaviour {
     private Quaternion startRot;
     public List<NetworkGrabbable> parts;
     public Button Nextbtn, Previousbtn;
-    [Networked] public int count { get; set; }
+    [Networked]public int count { get; set; }
     public List<SequentialPlacement> Acctive_count = new List<SequentialPlacement>();
     public List<string> names = new List<string> { "First_MAIN-SCREW", "Second_MAIN-SCREW", "GRAPPER", "First_S_SHAPE-SCREW", "Second_S_SHAPE-SCREW", "S_SHAPE", "SARWO_HORN_SCREW", "Sarvo_Horn_Defected", "Sarvo_Horn_Non_Defected" };
 
@@ -75,10 +76,11 @@ public class ObjectReset : NetworkBehaviour {
                 }
                 parts[count].enabled = false;
 
-                ResetObject1();
+                //ResetObject1();
                 if (Object.HasStateAuthority) // sirf host/server trigger kare
                 {
                     count++;
+                    RPC_sett_count(count);
                 }
                // count++;
                 parts[count].enabled = true;
@@ -147,6 +149,7 @@ public class ObjectReset : NetworkBehaviour {
                 if (Object.HasStateAuthority) // sirf host/server trigger kare
                 {
                     count--;
+                    RPC_sett_count(count);
                 }
 
                 if (count == 7)
@@ -155,6 +158,7 @@ public class ObjectReset : NetworkBehaviour {
                     if (Object.HasStateAuthority) // sirf host/server trigger kare
                     {
                         count--;
+                        RPC_sett_count(count);
                     }
                     parts[count].enabled = true;
                 }
@@ -184,9 +188,13 @@ public class ObjectReset : NetworkBehaviour {
         }
         Invoke("enable_previous_button", 2f);
     }
-
-
     [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_sett_count(int count1)
+    {
+        count = count1;
+    }
+
+        [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_Reset()
     {
         foreach (var item in magnet)
