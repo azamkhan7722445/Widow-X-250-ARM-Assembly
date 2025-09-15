@@ -8,6 +8,7 @@ using TMPro;
 using Fusion.Addons.StructureCohesion;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class ObjectReset : NetworkBehaviour {
     [Header("Target Object")]
@@ -152,8 +153,9 @@ public class ObjectReset : NetworkBehaviour {
             {
                 count--;
                 RPC_sett_count2(count);
+               
             }
-           
+            return;
         }
         else
         {
@@ -179,6 +181,19 @@ public class ObjectReset : NetworkBehaviour {
 
         count = count1;
         parts[count].enabled = true;
+
+        if (count == 0)
+        {
+            previous.text = names[count];
+            Previousbtn.gameObject.SetActive(false);
+        }
+        else
+        {
+            previous.text = names[count - 1];
+        }
+
+        Active.text = "Grab" + names[count];
+        nxt.text = names[count + 1];
 
     }
 
