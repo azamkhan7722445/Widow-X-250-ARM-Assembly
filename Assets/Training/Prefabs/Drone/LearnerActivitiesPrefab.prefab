@@ -2617,6 +2617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touchable Assembly
       objectReference: {fileID: 0}
+    - target: {fileID: 6287214696508770895, guid: e5eab55fee60cea4bb178ab3d03a2a84, type: 3}
+      propertyPath: check_attched
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6460556045855143502, guid: e5eab55fee60cea4bb178ab3d03a2a84, type: 3}
       propertyPath: Flags
       value: 524289

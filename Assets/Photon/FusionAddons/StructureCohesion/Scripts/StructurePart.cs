@@ -28,7 +28,7 @@ namespace Fusion.Addons.StructureCohesion
         public NetworkBool IsMoving { get; set; }
 
         public Structure CurrentStructure { get; set; } = null;
-
+        public bool check_anees;
         public int partWeight = 100;
         public StructuralCohesionMode structuralCohesionMode = StructuralCohesionMode.WeightBasedCohesion;
 
@@ -614,7 +614,8 @@ namespace Fusion.Addons.StructureCohesion
                     return;
                 }
 
-                if (structurePoint.StructurePart.partWeight >= this.partWeight)
+                //  if (structurePoint.StructurePart.partWeight > this.partWeight)
+                if (check_anees)
                 {
                     // Agar related part ka weight zyada ya equal hai  usko move mat karo
                     return;

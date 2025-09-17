@@ -28,9 +28,10 @@ public class ObjectReset : NetworkBehaviour {
     public TextMeshProUGUI nxt, previous, Active,Alert;
 
     public NetworkGrabbable defectet, undefected;
+    public GameObject particals;//
 
     [Networked] public bool assembling { get; set; }
-    [Networked] public bool deassembling { get; set; }
+    [Networked] public bool check { get; set; }
     void Start() {
         if (target != null) {
             startPos = target.position;
@@ -101,7 +102,7 @@ public class ObjectReset : NetworkBehaviour {
     public void enable_next_button() {
         Nextbtn.interactable = true;
     }
-    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_Reset_previous()
     {
 
@@ -223,7 +224,7 @@ public class ObjectReset : NetworkBehaviour {
             {
                 assembling = true;
             }
-
+            check=true;
             Nextbtn.gameObject.SetActive(false);
         }
 
@@ -295,6 +296,23 @@ public class ObjectReset : NetworkBehaviour {
     {
         parts[count].gameObject.transform.position = postion[count].position;
         parts[count].gameObject.transform.rotation = quaternion.Euler(Vector3.zero);
+    }
+
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void rpc_on_parti()
+    {
+        if (count == 0&&check)
+        {
+            particals.SetActive(true);
+        }
+        Invoke("off_parti", 10f);
+    }
+    public void off_parti()
+    {
+       
+            particals.SetActive(false);
+        
+
     }
 
 }
